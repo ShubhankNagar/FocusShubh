@@ -1,0 +1,96 @@
+{
+  "title": "Open country",
+  "year": 2024,
+  "order": 5,
+  "note": "Long drives, short walks, big skies.",
+  "frames": {
+    "01-tree-line.jpg": {
+      "exif": {
+        "f": "8",
+        "s": "1/250",
+        "iso": "100",
+        "fl": "35mm"
+      }
+    },
+    "02-the-falls.jpg": {
+      "exif": {
+        "f": "11",
+        "s": "1/4",
+        "iso": "100",
+        "fl": "24mm"
+      }
+    },
+    "03-creek.jpg": {
+      "exif": {
+        "f": "8",
+        "s": "1/60",
+        "iso": "200",
+        "fl": "24mm"
+      }
+    },
+    "04-valley-sun.jpg": {
+      "exif": {
+        "f": "11",
+        "s": "1/500",
+        "iso": "100",
+        "fl": "35mm"
+      }
+    },
+    "05-the-climb.jpg": {
+      "exif": {
+        "f": "5.6",
+        "s": "1/1000",
+        "iso": "100",
+        "fl": "50mm"
+      },
+      "featured": true,
+      "recipe": {
+        "Temp": 5650,
+        "Tint": 8,
+        "Exposure": 0.35,
+        "Contrast": 18,
+        "Highlights": -62,
+        "Shadows": 44,
+        "Whites": 12,
+        "Blacks": -18,
+        "Texture": 8,
+        "Clarity": 6,
+        "Dehaze": 10,
+        "Vibrance": 22,
+        "Saturation": -4
+      }
+    },
+    "06-breakers.jpg": {
+      "exif": {
+        "f": "16",
+        "s": "1/2",
+        "iso": "100",
+        "fl": "24mm"
+      }
+    },
+    "07-switchback.jpg": {
+      "exif": {
+        "f": "8",
+        "s": "1/320",
+        "iso": "100",
+        "fl": "35mm"
+      }
+    },
+    "08-golden-run.jpg": {
+      "exif": {
+        "f": "2.8",
+        "s": "1/2000",
+        "iso": "100",
+        "fl": "85mm"
+      }
+    },
+    "09-red-boat.jpg": {
+      "exif": {
+        "f": "5.6",
+        "s": "1/800",
+        "iso": "100",
+        "fl": "200mm"
+      }
+    }
+  }
+}

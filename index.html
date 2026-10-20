@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- build:meta -->
+<title>focus.shubh — Photographs by Shubhank Nagar</title>
+<meta name="description" content="Photographs by Shubhank Nagar. Worth capturing, Worth viewing.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="focus.shubh — Photographs by Shubhank Nagar">
+<meta property="og:description" content="Photographs by Shubhank Nagar. Worth capturing, Worth viewing.">
+<meta name="twitter:card" content="summary_large_image">
+<!-- /build:meta -->
+<meta name="theme-color" content="#0c0b0a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230c0b0a'/%3E%3Cpath d='M6 12V6h6M20 6h6v6M26 20v6h-6M12 26H6v-6' fill='none' stroke='%23ece7de' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23ff5b2e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  try { document.documentElement.dataset.theme = localStorage.getItem('lamp') || 'dark'; } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#selected">Skip to photographs</a>
+
+<header class="top">
+  <a class="brand" href="#top">focus<i>.</i>shubh</a>
+  <nav class="nav" id="nav" aria-label="Sections">
+    <a href="#selected"><b>01</b>Selected</a>
+    <a href="#series"><b>02</b>Series <sup data-count="series"></sup></a>
+    <a href="#archive"><b>03</b>Archive <sup data-count="frames"></sup></a>
+    <a href="#develop"><b>04</b>Develop <sup data-count="develop"></sup></a>
+    <a href="#about"><b>05</b>About</a>
+  </nav>
+  <div class="top__tools">
+    <button class="lamp lamp--sound" id="sound" type="button" aria-pressed="false">
+      <span class="wave" aria-hidden="true"><i></i><i></i><i></i></span><span id="sound-label">Sound off</span>
+    </button>
+    <button class="lamp" id="lamp" type="button" aria-label="Change the lamp: darkroom, lightbox or safelight">
+      <span class="lamp__dot"></span><span id="lamp-label">Darkroom</span>
+    </button>
+    <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+</header>
+
+<main>
+  <!-- 01 · live view: the opening screen is a camera. Point to focus, click to shoot, scroll to stop down. -->
+  <section class="live" id="top" aria-label="Live view">
+    <div class="live__pin" id="live">
+      <div class="live__soft" id="live-soft"></div>
+      <canvas class="live__bokeh" id="live-bokeh" aria-hidden="true"></canvas>
+      <div class="live__sharp" id="live-sharp"></div>
+      <div class="live__peak" aria-hidden="true"></div>
+      <div class="live__shade" aria-hidden="true"></div>
+      <div class="live__thirds" aria-hidden="true"></div>
+      <div class="live__af" id="live-af" aria-hidden="true"></div>
+      <svg class="live__iris" id="live-iris" aria-hidden="true" preserveAspectRatio="none"></svg>
+      <div class="live__copy">
+        <p class="live__kicker"><b id="live-handle">focus.shubh</b> <span>Photographs by</span></p>
+        <h1 class="live__name" id="live-name">Shubhank Nagar</h1>
+        <p class="live__tag"><span id="tag-a">Worth capturing</span> <i>: :</i> <span id="tag-b">Worth viewing</span></p>
+      </div>
+      <p class="live__hint" id="live-hint">Move to focus <i>·</i> Click to shoot <i>·</i> Scroll to stop down</p>
+      <button class="live__roll" id="live-roll" type="button" data-ctx="featured" hidden><b id="roll-n">0</b></button>
+      <button class="live__shutter" id="live-shutter" type="button" aria-label="Release the shutter"><span>Shoot</span></button>
+    </div>
+  </section>
+
+  <section class="sec stage" id="selected">
+    <header class="head">
+      <p class="eyebrow"><b>01</b> : : Selected</p>
+      <h2>In <em>focus</em></h2>
+      <p class="lede">Scroll slowly. Each frame comes into focus as it reaches the middle of the screen.</p>
+    </header>
+    <div class="flow" id="flow"></div>
+  </section>
+
+  <section class="sec" id="series">
+    <header class="head">
+      <p class="eyebrow"><b>02</b> : : Series</p>
+      <h2>Bodies of <em>work</em></h2>
+      <p class="lede" id="series-lede"></p>
+    </header>
+    <ol class="rolls" id="rolls"></ol>
+  </section>
+
+  <section class="sec" id="archive">
+    <header class="head">
+      <p class="eyebrow"><b>03</b> : : Archive</p>
+      <h2>Every <em>frame</em></h2>
+      <p class="lede">The whole archive on one table. Pick a series, then pick how closely you want to look.</p>
+    </header>
+    <div class="bar">
+      <div class="chips" id="chips" role="group" aria-label="Filter by series"></div>
+      <div class="views" id="views" role="group" aria-label="Layout">
+        <button type="button" data-view="sheet">Sheet</button>
+        <button type="button" data-view="frames" aria-pressed="true">Frames</button>
+        <button type="button" data-view="index">Index</button>
+      </div>
+    </div>
+    <div class="grid" id="grid" data-view="frames"></div>
+    <div class="more" id="more" aria-hidden="true"></div>
+  </section>
+
+  <section class="sec" id="develop">
+    <header class="head">
+      <p class="eyebrow"><b>04</b> : : Develop</p>
+      <h2>From RAW to <em>grade</em></h2>
+      <p class="lede">Nothing here is generated. Drag across a frame to see what the camera recorded, and what I made of it.</p>
+    </header>
+    <div class="dev" id="dev">
+      <div class="cmp" id="cmp">
+        <div class="cmp__img" id="cmp-after"></div>
+        <div class="cmp__img cmp__img--raw" id="cmp-before"></div>
+        <span class="cmp__tag cmp__tag--l">RAW</span>
+        <span class="cmp__tag cmp__tag--r">Graded</span>
+        <div class="cmp__bar" id="cmp-bar" role="slider" tabindex="0" aria-label="Reveal the unedited frame"
+             aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></div>
+      </div>
+      <aside class="recipe">
+        <p class="recipe__no" id="dev-no"></p>
+        <h3 id="dev-title"></h3>
+        <p class="recipe__meta" id="dev-meta"></p>
+        <dl class="dials" id="dev-dials"></dl>
+        <div class="swatches" id="dev-pal" aria-label="Colour palette of the graded frame"></div>
+      </aside>
+      <div class="picker" id="dev-picker" role="group" aria-label="Choose a frame"></div>
+    </div>
+  </section>
+
+  <section class="sec about" id="about">
+    <p class="eyebrow"><b>05</b> : : About</p>
+    <h2 class="about__line"><span id="about-a">Worth capturing</span> <i>: :</i> <em id="about-b">Worth viewing</em></h2>
+    <div class="about__cols">
+      <div class="about__text" id="about-text"></div>
+      <dl class="facts" id="facts"></dl>
+    </div>
+    <a class="hello" id="hello" href="#" target="_blank" rel="noopener">
+      <span>Say hello</span><span class="hello__at" id="hello-at"></span><span aria-hidden="true">↗</span>
+    </a>
+  </section>
+</main>
+
+<footer class="foot">
+  <p id="foot-count"></p>
+  <p id="foot-note"></p>
+  <p>© <span id="year"></span> <span id="foot-name">Shubhank Nagar</span></p>
+</footer>
+
+<!-- the viewfinder strip -->
+<div class="hud" id="hud" aria-hidden="true">
+  <p class="hud__exif" id="hud-exif">READY</p>
+  <div class="hud__ring"><div class="hud__scale" id="hud-scale"></div></div>
+  <p class="hud__frame" id="hud-frame"></p>
+  <p class="hud__lcd"><b>A</b><span id="lcd-s">1/2000</span><span id="lcd-f">F1.4</span><span>ISO 100</span></p>
+  <div class="meter" id="meter"><i></i></div>
+  <p class="hud__shots"><span class="hud__af" id="lcd-af">AF</span><span id="lcd-left"></span></p>
+</div>
+
+<dialog class="viewer" id="viewer" aria-label="Photograph">
+  <div class="safe safe--grey" aria-hidden="true"></div><div class="safe safe--red" aria-hidden="true"></div>
+  <div class="viewer__img" id="v-img"></div>
+  <button class="viewer__nav viewer__nav--prev" id="v-prev" type="button" aria-label="Previous frame">←</button>
+  <button class="viewer__nav viewer__nav--next" id="v-next" type="button" aria-label="Next frame">→</button>
+  <button class="viewer__close" id="v-close" type="button" autofocus>Close <span aria-hidden="true">✕</span></button>
+  <div class="viewer__info">
+    <p class="viewer__no" id="v-no"></p>
+    <div class="viewer__title">
+      <h2 id="v-title"></h2>
+      <p id="v-sub"></p>
+    </div>
+    <p class="viewer__exif" id="v-exif"></p>
+    <div class="swatches" id="v-pal"></div>
+    <button class="viewer__raw" id="v-raw" type="button">Hold for RAW</button>
+  </div>
+</dialog>
+
+<div class="af" id="af" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<div class="loupe" id="loupe" aria-hidden="true"></div>
+<div class="safe safe--grey" aria-hidden="true"></div><div class="safe safe--red" aria-hidden="true"></div>
+<noscript><p class="nojs">This portfolio needs JavaScript to lay out the photographs.</p></noscript>
+
+<script src="data/manifest.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

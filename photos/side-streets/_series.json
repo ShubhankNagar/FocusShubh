@@ -1,0 +1,104 @@
+{
+  "title": "Side streets",
+  "year": 2025,
+  "order": 2,
+  "note": "Walking without a plan. Doors, wheels, corners.",
+  "frames": {
+    "01-cobbles.jpg": {
+      "exif": {
+        "f": "2.8",
+        "s": "1/250",
+        "iso": "200",
+        "fl": "35mm"
+      },
+      "featured": true,
+      "recipe": {
+        "Temp": 6200,
+        "Tint": -4,
+        "Exposure": 0.2,
+        "Contrast": 12,
+        "Highlights": -80,
+        "Shadows": 58,
+        "Whites": 6,
+        "Blacks": -12,
+        "Texture": 4,
+        "Clarity": -6,
+        "Dehaze": 18,
+        "Vibrance": 16,
+        "Saturation": -8
+      }
+    },
+    "02-white-town.jpg": {
+      "exif": {
+        "f": "8",
+        "s": "1/500",
+        "iso": "100",
+        "fl": "50mm"
+      }
+    },
+    "03-canal.jpg": {
+      "exif": {
+        "f": "5.6",
+        "s": "1/320",
+        "iso": "100",
+        "fl": "35mm"
+      }
+    },
+    "04-corner-cafe.jpg": {
+      "exif": {
+        "f": "2",
+        "s": "1/160",
+        "iso": "400",
+        "fl": "35mm"
+      }
+    },
+    "05-tricycle.jpg": {
+      "exif": {
+        "f": "2.8",
+        "s": "1/400",
+        "iso": "100",
+        "fl": "50mm"
+      }
+    },
+    "06-yellow-doors.jpg": {
+      "exif": {
+        "f": "5.6",
+        "s": "1/250",
+        "iso": "100",
+        "fl": "35mm"
+      },
+      "featured": true,
+      "recipe": {
+        "Temp": 5650,
+        "Tint": 8,
+        "Exposure": 0.35,
+        "Contrast": 18,
+        "Highlights": -62,
+        "Shadows": 44,
+        "Whites": 12,
+        "Blacks": -18,
+        "Texture": 8,
+        "Clarity": 6,
+        "Dehaze": 10,
+        "Vibrance": 22,
+        "Saturation": -4
+      }
+    },
+    "07-the-van.jpg": {
+      "exif": {
+        "f": "4",
+        "s": "1/500",
+        "iso": "100",
+        "fl": "50mm"
+      }
+    },
+    "08-green-bicycle.jpg": {
+      "exif": {
+        "f": "4",
+        "s": "1/200",
+        "iso": "200",
+        "fl": "35mm"
+      }
+    }
+  }
+}

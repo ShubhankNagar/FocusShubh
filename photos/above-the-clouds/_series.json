@@ -1,0 +1,96 @@
+{
+  "title": "Above the clouds",
+  "year": 2026,
+  "order": 1,
+  "note": "Weather, altitude and the last ten minutes of light.",
+  "frames": {
+    "01-cirrus.jpg": {
+      "exif": {
+        "f": "8",
+        "s": "1/500",
+        "iso": "100",
+        "fl": "35mm"
+      },
+      "featured": true,
+      "recipe": {
+        "Temp": 5650,
+        "Tint": 8,
+        "Exposure": 0.35,
+        "Contrast": 18,
+        "Highlights": -62,
+        "Shadows": 44,
+        "Whites": 12,
+        "Blacks": -18,
+        "Texture": 8,
+        "Clarity": 6,
+        "Dehaze": 10,
+        "Vibrance": 22,
+        "Saturation": -4
+      }
+    },
+    "02-stratus.jpg": {
+      "exif": {
+        "f": "5.6",
+        "s": "1/800",
+        "iso": "100",
+        "fl": "50mm"
+      }
+    },
+    "03-ridgeline.jpg": {
+      "exif": {
+        "f": "11",
+        "s": "1/250",
+        "iso": "100",
+        "fl": "24mm"
+      }
+    },
+    "04-dune-line.jpg": {
+      "exif": {
+        "f": "8",
+        "s": "1/640",
+        "iso": "100",
+        "fl": "85mm"
+      }
+    },
+    "05-last-light.jpg": {
+      "exif": {
+        "f": "4",
+        "s": "1/125",
+        "iso": "400",
+        "fl": "85mm"
+      },
+      "featured": true
+    },
+    "06-ember-field.jpg": {
+      "exif": {
+        "f": "5.6",
+        "s": "1/200",
+        "iso": "200",
+        "fl": "35mm"
+      },
+      "recipe": {
+        "Temp": 4900,
+        "Tint": 14,
+        "Exposure": 0.6,
+        "Contrast": 26,
+        "Highlights": -48,
+        "Shadows": 30,
+        "Whites": 20,
+        "Blacks": -30,
+        "Texture": 12,
+        "Clarity": 14,
+        "Dehaze": 4,
+        "Vibrance": 30,
+        "Saturation": 2
+      }
+    },
+    "07-blue-hour.jpg": {
+      "exif": {
+        "f": "8",
+        "s": "1/320",
+        "iso": "100",
+        "fl": "24mm"
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "title": "After dark",
+  "year": 2025,
+  "order": 3,
+  "note": "Tripod, patience, and whatever the city leaves switched on.",
+  "frames": {
+    "01-bridge-lights.jpg": {
+      "exif": {
+        "f": "11",
+        "s": "8s",
+        "iso": "100",
+        "fl": "24mm"
+      }
+    },
+    "02-suspension.jpg": {
+      "exif": {
+        "f": "8",
+        "s": "15s",
+        "iso": "100",
+        "fl": "24mm"
+      },
+      "featured": true,
+      "recipe": {
+        "Temp": 4900,
+        "Tint": 14,
+        "Exposure": 0.6,
+        "Contrast": 26,
+        "Highlights": -48,
+        "Shadows": 30,
+        "Whites": 20,
+        "Blacks": -30,
+        "Texture": 12,
+        "Clarity": 14,
+        "Dehaze": 4,
+        "Vibrance": 30,
+        "Saturation": 2
+      }
+    },
+    "03-river-dome.jpg": {
+      "exif": {
+        "f": "11",
+        "s": "10s",
+        "iso": "100",
+        "fl": "35mm"
+      }
+    },
+    "04-rain-on-glass.jpg": {
+      "exif": {
+        "f": "1.8",
+        "s": "1/60",
+        "iso": "1600",
+        "fl": "50mm"
+      }
+    },
+    "05-encore.jpg": {
+      "exif": {
+        "f": "2.8",
+        "s": "1/125",
+        "iso": "3200",
+        "fl": "24mm"
+      },
+      "featured": true
+    },
+    "06-distant-storm.jpg": {
+      "exif": {
+        "f": "4",
+        "s": "20s",
+        "iso": "400",
+        "fl": "35mm"
+      }
+    },
+    "07-hands-up.jpg": {
+      "exif": {
+        "f": "2",
+        "s": "1/100",
+        "iso": "3200",
+        "fl": "35mm"
+      }
+    }
+  }
+}

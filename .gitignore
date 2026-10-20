@@ -1,0 +1,9 @@
+# Original exports stay on your machine; the site only needs img/ and data/.
+photos/**
+!photos/**/
+!photos/**/_series.json
+
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
